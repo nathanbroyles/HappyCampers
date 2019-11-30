@@ -52,6 +52,8 @@ class CampingAnnotation: MKPointAnnotation {
     
     init(mapable: Mapable) {
         self.mapable = mapable
+        super.init()
+        self.coordinate = CLLocationCoordinate2D(latitude: mapable.lat, longitude: mapable.long)
     }
     
     func annotationView(with annotation: CampingAnnotation) -> MKPinAnnotationView {

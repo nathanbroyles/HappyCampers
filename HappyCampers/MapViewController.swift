@@ -36,12 +36,39 @@ class MapViewController: UIViewController {
         let latLongMeterSpan: CLLocationDistance = 130000
         let region = MKCoordinateRegion(center: mapCenter, latitudinalMeters: latLongMeterSpan, longitudinalMeters: latLongMeterSpan)
         mapView.setRegion(region, animated: true)
+        
+        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(longPressRecognized(gestureReconizer:)))
+        view.addGestureRecognizer(longPressRecognizer)
+    }
+    
+    @objc func longPressRecognized(gestureReconizer: UILongPressGestureRecognizer) {
+        if gestureReconizer.state == .began {
+            let location = gestureReconizer.location(in: mapView)
+            let coordinate = mapView.convert(location, toCoordinateFrom: mapView)
+
+            let alertController = UIAlertController(title: "New Campsite", message: nil, preferredStyle: .alert)
+            alertController.addTextField { (nameTextField) in
+                nameTextField.placeholder = "Campsite Name"
+            }
+            alertController.addTextField { (descriptionTextField) in
+                descriptionTextField.placeholder = "Campsite Description"
+            }
+            let addAction = UIAlertAction(title: "Add", style: .default) { (action) in
+                let campsite = Campsite(name: alertController.textFields?.first?.text ?? "", description: alertController.textFields?.last?.text ?? "", lat: coordinate.latitude, long: coordinate.longitude)
+                
+                let annotation = CampingAnnotation(mapable: campsite)
+                self.mapView.addAnnotation(annotation)
+            }
+            let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
+            alertController.addAction(addAction)
+            alertController.addAction(cancelAction)
+            present(alertController, animated: true, completion: nil)
+        }
     }
     
     func map(_ annotations: [Mapable]?) {
         for mapable in annotations ?? [] {
             let annotation = CampingAnnotation(mapable: mapable)
-            annotation.coordinate = CLLocationCoordinate2D(latitude: mapable.lat, longitude: mapable.long)
             mapView.addAnnotation(annotation)
         }
     }
