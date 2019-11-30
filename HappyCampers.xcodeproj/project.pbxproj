@@ -19,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D82D62E42393081C0055650E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D84DC2EC2392F3FB00C4D5D8 /* CampingAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampingAnnotation.swift; sourceTree = "<group>"; };
 		D8BE2105239190BA00544338 /* HappyCampers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyCampers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8BE2108239190BA00544338 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		D8BE2107239190BA00544338 /* HappyCampers */ = {
 			isa = PBXGroup;
 			children = (
+				D82D62E42393081C0055650E /* README.md */,
 				D8BE2108239190BA00544338 /* AppDelegate.swift */,
 				D8BE210A239190BA00544338 /* SceneDelegate.swift */,
 				D8BE210C239190BA00544338 /* MapViewController.swift */,
