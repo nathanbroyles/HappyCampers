@@ -1,0 +1,45 @@
+[
+    {
+        "name": "Alfa",
+        "lat": 44.4605,
+        "long": -110.8281,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales tellus eu lacus iaculis, vel eleifend ipsum tincidunt. Donec efficitur, leo nec pretium sodales, metus."
+    },
+    {
+        "name": "Bravo",
+        "lat": 44.9769,
+        "long": -110.6991,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales tellus eu lacus iaculis, vel eleifend ipsum tincidunt. Donec efficitur, leo nec pretium sodales, metus."
+    },
+    {
+        "name": "Charlie",
+        "lat": 44.4886,
+        "long": -110.0039,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales tellus eu lacus iaculis, vel eleifend ipsum tincidunt. Donec efficitur, leo nec pretium sodales, metus."
+    },
+    {
+        "name": "Delta",
+        "lat": 45.0253,
+        "long": -110.7008,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales tellus eu lacus iaculis, vel eleifend ipsum tincidunt. Donec efficitur, leo nec pretium sodales, metus."
+    },
+    {
+        "name": "Echo",
+        "lat": 45.0045,
+        "long": -110.0104,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales tellus eu lacus iaculis, vel eleifend ipsum tincidunt. Donec efficitur, leo nec pretium sodales, metus."
+    },
+    {
+        "name": "Foxtrot",
+        "lat": 44.1358,
+        "long": -110.6668,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales tellus eu lacus iaculis, vel eleifend ipsum tincidunt. Donec efficitur, leo nec pretium sodales, metus."
+    },
+    {
+        "name": "Golf",
+        "lat": 44.6868,
+        "long": -111.2164,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales tellus eu lacus iaculis, vel eleifend ipsum tincidunt. Donec efficitur, leo nec pretium sodales, metus."
+    }
+]
+

@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		D8BE2109239190BA00544338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BE2108239190BA00544338 /* AppDelegate.swift */; };
 		D8BE210B239190BA00544338 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BE210A239190BA00544338 /* SceneDelegate.swift */; };
-		D8BE210D239190BA00544338 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BE210C239190BA00544338 /* ViewController.swift */; };
+		D8BE210D239190BA00544338 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BE210C239190BA00544338 /* MapViewController.swift */; };
 		D8BE2110239190BA00544338 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8BE210E239190BA00544338 /* Main.storyboard */; };
 		D8BE2112239190BC00544338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8BE2111239190BC00544338 /* Assets.xcassets */; };
 		D8BE2115239190BC00544338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8BE2113239190BC00544338 /* LaunchScreen.storyboard */; };
+		D8BE211D2391928800544338 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BE211C2391928800544338 /* Model.swift */; };
+		D8BE211F2391960700544338 /* campsites.json in Resources */ = {isa = PBXBuildFile; fileRef = D8BE211E2391960700544338 /* campsites.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D8BE2105239190BA00544338 /* HappyCampers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyCampers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8BE2108239190BA00544338 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8BE210A239190BA00544338 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D8BE210C239190BA00544338 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8BE210C239190BA00544338 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		D8BE210F239190BA00544338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8BE2111239190BC00544338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8BE2114239190BC00544338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8BE2116239190BC00544338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8BE211C2391928800544338 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D8BE211E2391960700544338 /* campsites.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = campsites.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +62,10 @@
 			children = (
 				D8BE2108239190BA00544338 /* AppDelegate.swift */,
 				D8BE210A239190BA00544338 /* SceneDelegate.swift */,
-				D8BE210C239190BA00544338 /* ViewController.swift */,
+				D8BE210C239190BA00544338 /* MapViewController.swift */,
 				D8BE210E239190BA00544338 /* Main.storyboard */,
+				D8BE211C2391928800544338 /* Model.swift */,
+				D8BE211E2391960700544338 /* campsites.json */,
 				D8BE2111239190BC00544338 /* Assets.xcassets */,
 				D8BE2113239190BC00544338 /* LaunchScreen.storyboard */,
 				D8BE2116239190BC00544338 /* Info.plist */,
@@ -128,6 +134,7 @@
 				D8BE2115239190BC00544338 /* LaunchScreen.storyboard in Resources */,
 				D8BE2112239190BC00544338 /* Assets.xcassets in Resources */,
 				D8BE2110239190BA00544338 /* Main.storyboard in Resources */,
+				D8BE211F2391960700544338 /* campsites.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8BE210D239190BA00544338 /* ViewController.swift in Sources */,
+				D8BE210D239190BA00544338 /* MapViewController.swift in Sources */,
 				D8BE2109239190BA00544338 /* AppDelegate.swift in Sources */,
 				D8BE210B239190BA00544338 /* SceneDelegate.swift in Sources */,
+				D8BE211D2391928800544338 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
