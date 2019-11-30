@@ -89,6 +89,9 @@ extension MapViewController: MKMapViewDelegate {
             annotationView?.annotation = campingAnnotation
         }
         
+        annotationView?.clusteringIdentifier = campingAnnotation.clusteringIdentifier
+        annotationView?.detailCalloutAccessoryView = campingAnnotation.calloutView()
+        
         return annotationView
     }
 }

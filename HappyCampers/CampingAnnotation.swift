@@ -59,8 +59,6 @@ class CampingAnnotation: MKPointAnnotation {
     func annotationView(with annotation: CampingAnnotation) -> MKPinAnnotationView {
         let annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: dequeueIdentifier)
         annotationView.image = image
-        annotationView.clusteringIdentifier = clusteringIdentifier
-        annotationView.detailCalloutAccessoryView = calloutView()
         annotationView.canShowCallout = true
         return annotationView
     }
