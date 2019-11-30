@@ -1,4 +1,4 @@
-# RangerMap4000
+# HappyCampers
 Yellowstone Forest Rangers app.
 
 ## Features
