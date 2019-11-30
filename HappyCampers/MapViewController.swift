@@ -11,12 +11,6 @@ import MapKit
 
 class MapViewController: UIViewController {
     
-    var campers: [Camper] = [Camper]() {
-        didSet {
-            map(campers)
-        }
-    }
-    
     let mapCenter = CLLocationCoordinate2D(latitude: 44.4280, longitude: -110.5885)
     
     @IBOutlet weak var mapView: MKMapView!
@@ -29,14 +23,16 @@ class MapViewController: UIViewController {
         }
         
         Model.createCampers(around: mapCenter) { (campers) in
-            self.campers = campers
+            self.map(campers)
         }
         
+        // set map center and zoom
         mapView.setCenter(mapCenter, animated: true)
         let latLongMeterSpan: CLLocationDistance = 130000
         let region = MKCoordinateRegion(center: mapCenter, latitudinalMeters: latLongMeterSpan, longitudinalMeters: latLongMeterSpan)
         mapView.setRegion(region, animated: true)
         
+        // long press recognizer for adding new campsites
         let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(longPressRecognized(gestureReconizer:)))
         view.addGestureRecognizer(longPressRecognizer)
     }

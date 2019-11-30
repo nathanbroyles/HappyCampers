@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Yellowstone-->
+        <!--Ranger Map 4000-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="HappyCampers" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,7 +31,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Yellowstone" id="mJq-uc-nNb"/>
+                    <navigationItem key="navigationItem" title="Ranger Map 4000" id="mJq-uc-nNb"/>
                     <connections>
                         <outlet property="mapView" destination="Gn1-Q6-CEP" id="Pvx-PN-2N2"/>
                     </connections>

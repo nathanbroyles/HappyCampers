@@ -67,7 +67,7 @@ class CampingAnnotation: MKPointAnnotation {
         let calloutView = UIStackView()
         calloutView.axis = .vertical
         calloutView.spacing = 8
-        calloutView.widthAnchor.constraint(equalToConstant: 225).isActive = true
+        calloutView.widthAnchor.constraint(equalToConstant: 175).isActive = true
         
         let title = UILabel()
         title.text = mapable.name

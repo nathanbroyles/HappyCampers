@@ -11,6 +11,8 @@ import CoreLocation
 
 struct Model {
     
+    static let camperAdjectives = ["attractive", "bald", "beautiful", "chubby", "clean", "dazzling", "drab", "elegant", "fancy", "fit", "flabby", "glamorous", "gorgeous", "handsome", "long", "magnificent", "muscular", "plain", "plump", "quaint", "scruffy", "shapely", "short", "skinny", "stocky", "ugly", "unkempt", "unsightly"]
+    
     static func loadCampsites(completion: ([Campsite]?) -> Void) {
         guard let jsonURL = Bundle.main.url(forResource: "campsites", withExtension: "json"),
             let jsonData = try? Data(contentsOf: jsonURL) else {
@@ -25,13 +27,13 @@ struct Model {
         }
     }
     
-    static func createCampers(around coordinate: CLLocationCoordinate2D,completion: ([Camper]) -> Void) {
+    static func createCampers(around coordinate: CLLocationCoordinate2D, completion: ([Camper]) -> Void) {
         var campers = [Camper]()
         for int in 0..<30 {
             let randomLat = Double.random(in: (coordinate.latitude - 0.5)...(coordinate.latitude + 0.5))
             let randomLong = Double.random(in: (coordinate.longitude - 0.5)...(coordinate.longitude + 0.5))
             let randomPhone = Int.random(in: 1000000000...9999999999)
-            let camper = Camper(name: "Kid \(int)", description: "The best kid.", phone: randomPhone, lat: randomLat, long: randomLong)
+            let camper = Camper(name: "Kid \(int)", description: "The \(camperAdjectives.randomElement() ?? "") camper.", phone: randomPhone, lat: randomLat, long: randomLong)
             campers.append(camper)
         }
         completion(campers)
